@@ -23,7 +23,6 @@ namespace 操作符的本质
             person2.Name = "May";
 
             //List<Person> nation = Person.GetMarry(person1, person2);    //声明一个Person类列表nation（民族），让两人结婚。
-
             List<Person> nation = person1 + person2;    //通过“+”操作符，实现了与调用GetMarry方法一样的效果。
 
             foreach (var person in nation)  //输出“民族”中每个人的名字。
