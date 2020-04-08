@@ -4,3 +4,4 @@ F:\Github Documents\Daily_2020\C#语言入门详解\操作符详解\New操作符
 F:\Github Documents\Daily_2020\C#语言入门详解\操作符详解\New操作符\obj\Debug\New操作符.csproj.CoreCompileInputs.cache
 F:\Github Documents\Daily_2020\C#语言入门详解\操作符详解\New操作符\obj\Debug\New操作符.exe
 F:\Github Documents\Daily_2020\C#语言入门详解\操作符详解\New操作符\obj\Debug\New操作符.pdb
+F:\Github Documents\Daily_2020\C#语言入门详解\操作符详解\New操作符\obj\Debug\New操作符.csprojAssemblyReference.cache
