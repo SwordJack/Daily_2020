@@ -17,7 +17,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.datasets import make_classification    # make_classification方法现今存在于datasets模块中。
 from sklearn.svm import SVC
 
-
 x, y = make_classification(
     n_samples=300,      # 300个样本
     n_features=2,       # 2个属性

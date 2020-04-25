@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# ./usr/bin/env python
+# !/usr/bin/env python
 '''
 学习利用scikit-learn内置鸢尾花数据集进行机器学习分类。
 
