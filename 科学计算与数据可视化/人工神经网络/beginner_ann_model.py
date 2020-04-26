@@ -38,13 +38,18 @@ class BeginnerAnn():
             self.train_target_value = target_value
         self.hidden_layer_neuron_numbers = neuron_numbers
         if neuron_numbers is not None:
-            self.weights_list = list()
-            for i in range(0, len(neuron_numbers)):   # 对于神经元数目列表中的每一层。
-                if i == 0:
-                    self.weights_list.append(np_random.random((eigen_value.shape[1], neuron_numbers[i])) * 2 - 1)   # 第0隐藏层，特征值向第0层的神经元映射。
-                else:
-                    self.weights_list.append(np_random.random((neuron_numbers[i-1], neuron_numbers[i])) * 2 - 1) # 之后的隐藏层，是由上一层的神经元向本层映射。
-            self.weights_list.append(np_random.random((neuron_numbers[-1], target_value.shape[1])) * 2 - 1)  # 输出层，neuron_number个神经元向输出数据的神经元映射。
+            if (neuron_numbers == []):
+                raise RuntimeError('空列表是不被允许，也不具有任何意义的。')
+            elif (0 in neuron_numbers):
+                raise RuntimeError('难道神经网络中可以有哪一层具有0个神经元吗？')
+            else:
+                self.weights_list = list()
+                for i in range(0, len(neuron_numbers)):   # 对于神经元数目列表中的每一层。
+                    if i == 0:
+                        self.weights_list.append(np_random.random((eigen_value.shape[1], neuron_numbers[i])) * 2 - 1)   # 第0隐藏层，特征值向第0层的神经元映射。
+                    else:
+                        self.weights_list.append(np_random.random((neuron_numbers[i-1], neuron_numbers[i])) * 2 - 1) # 之后的隐藏层，是由上一层的神经元向本层映射。
+                self.weights_list.append(np_random.random((neuron_numbers[-1], target_value.shape[1])) * 2 - 1)  # 输出层，neuron_number个神经元向输出数据的神经元映射。
         if (neuron_numbers is None):                                    # 给单神经元赋以初始权重。
             self.weights = np_random.random((eigen_value.shape[1], 1)) * 2 - 1
         if (neuron_numbers is None and target_value.shape[1] != 1):     # 单个神经元无法进行多个输出。

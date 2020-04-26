@@ -23,7 +23,7 @@ def execute_csv_data():
     data_output = DATA_SOURCE.iloc[:, 7:9]  # output，2列。
     train_input, test_input, train_output, test_output = train_test_split(data_input, data_output, test_size=10)
     ann = BeginnerAnn(eigen_value=train_input, target_value=train_output, neuron_numbers=[6, 6], standardize_data=False)
-    ann.train(train_round=10000)
+    ann.train(train_round=1)
     print(ann.demonstrate_weights())
     print(ann.predict(test_input))
     print(test_output)
