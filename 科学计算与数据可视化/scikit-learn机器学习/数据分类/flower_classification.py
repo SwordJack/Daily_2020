@@ -22,8 +22,8 @@ iris = datasets.load_iris()  # 导入鸢尾花数据集，其中包含有data和
 iris_x = iris['data']       # 花的属性。
 iris_y = iris['target']     # 花的分类。
 
-#print(iris_x[:2, :])    # 打印花属性的前两组，每组是一个含有4个元素的列表。
-#print(iris_y)           # 打印花分类的数据（若干的0、1、2）。
+print(iris_x[:2, :])    # 打印花属性的前两组，每组是一个含有4个元素的列表。
+print(iris_y[:2])           # 打印花分类的数据（若干的0、1、2）。
 
 x_train, x_test, y_train, y_test = train_test_split(    # 对数据集进行打乱、切分，并设置测试集的比例为
     iris_x, iris_y, test_size=0.3

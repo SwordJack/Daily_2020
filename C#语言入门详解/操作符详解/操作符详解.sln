@@ -28,6 +28,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "正负非反操作符", "�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "强制类型转换操作符", "强制类型转换操作符\强制类型转换操作符.csproj", "{83FA0E61-6DD0-4196-A4E6-89AB1E9A0016}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "移位操作符", "移位操作符\移位操作符.csproj", "{1980D754-4EC8-4C12-BD9C-207F056A4893}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "类型检验操作符", "类型检验操作符\类型检验操作符.csproj", "{9708B418-004A-4761-A051-919DC26DAA36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "条件操作符", "条件操作符\条件操作符.csproj", "{FF82B52D-A711-4F14-A0A5-BDC39AD30342}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +80,18 @@ Global
 		{83FA0E61-6DD0-4196-A4E6-89AB1E9A0016}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83FA0E61-6DD0-4196-A4E6-89AB1E9A0016}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83FA0E61-6DD0-4196-A4E6-89AB1E9A0016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1980D754-4EC8-4C12-BD9C-207F056A4893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1980D754-4EC8-4C12-BD9C-207F056A4893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1980D754-4EC8-4C12-BD9C-207F056A4893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1980D754-4EC8-4C12-BD9C-207F056A4893}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9708B418-004A-4761-A051-919DC26DAA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9708B418-004A-4761-A051-919DC26DAA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9708B418-004A-4761-A051-919DC26DAA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9708B418-004A-4761-A051-919DC26DAA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF82B52D-A711-4F14-A0A5-BDC39AD30342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF82B52D-A711-4F14-A0A5-BDC39AD30342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF82B52D-A711-4F14-A0A5-BDC39AD30342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF82B52D-A711-4F14-A0A5-BDC39AD30342}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
